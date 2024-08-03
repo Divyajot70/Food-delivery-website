@@ -5,7 +5,7 @@
   "type": "package.json",
   "scripts": {
     "server": "nodemon server.js",
-    "start" : "node server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
