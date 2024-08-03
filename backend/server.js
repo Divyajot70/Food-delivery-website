@@ -14,6 +14,11 @@ import orderRouter from "./routes/orderRoute.js"
 const app = express()
 const port = process.env.PORT || 4001;
 
+
+const corsOptions = {
+  origin: 'https://food-delivery-website-roan.vercel.app', // Your Vercel frontend URL
+  optionsSuccessStatus: 200
+};
 //middleware
 app.use(express.json())
 app.use(cors())
