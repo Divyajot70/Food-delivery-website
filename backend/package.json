@@ -2,7 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "server.js",
-  "type": "package.json",
+  "type": "module",
+  "engines": {
+    "node": ">=16.x",
+    "postinstall": "npm rebuild bcrypt"
+  },
   "scripts": {
     "server": "nodemon server.js",
     "start": "node server.js"
